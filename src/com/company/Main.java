@@ -1,19 +1,19 @@
 package com.company;
+import static java.lang.System.*;
 
 public class Main {
 
-    public static void main(String[] args) {
-	int a = (int)3;
-	int b = (int)4;
-	int r = (int)3;
-	int c= (int)(Math.sqrt((a*a)+(b*b)));
-	int d=(int)r*2;
-		if(d>=c) {
-			System.out.println("Закроет.");}
+	public static void main(String[] args) {
+		double firstSquareSide = 3;
+		double secondSquareSide = 4;
+		double radius = 3;
+		double diagonal = Math.sqrt((Math.pow(firstSquareSide, 2) + Math.pow(secondSquareSide, 2)));
+		double diameter = radius * 2;
 
-    else {
-	    System.out.println("Не закроет.");
-
-    }
-    }
+		if (diameter >= diagonal) {
+			out.println("Закроет.");
+		} else {
+			out.println("Не закроет.");
+		}
+	}
 }
